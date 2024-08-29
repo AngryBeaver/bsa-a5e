@@ -13,3 +13,8 @@ Hooks.on("updateActor",(actor,flags,diff,id)=>{
     }
 })
 
+Hooks.on("beavers-system-interface.ready", async function(){
+    import("./SkillTest.js");
+    import("./AbilityTest.js");
+});
+
