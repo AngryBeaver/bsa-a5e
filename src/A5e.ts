@@ -64,6 +64,7 @@ export class A5e implements SystemApi {
         const body = $(app.element).find('main');
         const header = $(body).find('header');
         header.nextAll().remove();
+        body.css("overflow","auto");
         body.append(element);
         //it's not a FORMApplication !! so i need to update it myself
         const update=(e)=>{
@@ -74,7 +75,7 @@ export class A5e implements SystemApi {
             }
             const path = e.currentTarget.name;
             const flags={};
-            setProperty(flags,path,value);
+            foundry.utils.setProperty(flags,path,value);
             app.item.update(flags)
         };
         window.setTimeout(()=>{

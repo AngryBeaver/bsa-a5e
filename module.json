@@ -2,7 +2,7 @@
     "title": "Beaver's System Adaption A5E",
     "description": "A5E implementation for Beaver's System Interface",
     "id": "bsa-a5e",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "authors": [
       {
         "name": "angryBeaver",
@@ -15,7 +15,7 @@
       "src/main.js"
     ],
     "styles": [
-
+      "css/beavers.css"
     ],
     "packs": [
     ],
