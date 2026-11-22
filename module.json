@@ -1,34 +1,36 @@
 {
-    "title": "Beaver's System Adaption A5E",
-    "description": "A5E implementation for Beaver's System Interface",
-    "id": "bsa-a5e",
-    "version": "1.2.0",
-    "authors": [
-      {
-        "name": "angryBeaver",
-        "url": "https://github.com/angrybeaver"
-      }
-    ],
-    "languages": [
-    ],
-    "esmodules": [
-      "src/main.js"
-    ],
-    "styles": [
-      "css/beavers.css"
-    ],
-    "packs": [
-    ],
-    "url": "https://github.com/AngryBeaver/bsa-a5e",
-    "manifest": "https://github.com/AngryBeaver/bsa-a5e/releases/latest/download/module.json",
-    "download": "https://github.com/AngryBeaver/bsa-a5e/releases/latest/download/bsa-a5e.zip",
-    "relationships": {
-      "systems": [{
-        "id": "a5e"
-      }]
-    },
-    "compatibility": {
-      "minimum": "11",
-      "verified": "12"
+  "title": "{{title}}",
+  "description": "{{description}}",
+  "id": "{{name}}",
+  "version": "{{version}}",
+  "authors": [
+    {
+      "name": "angryBeaver",
+      "url": "https://github.com/angrybeaver"
     }
+  ],
+  "languages": [
+  ],
+  "styles": "{{css}}",
+  "esmodules": "{{sources}}",
+  "packs": [
+  ],
+  "url": "https://github.com/AngryBeaver/bsa-a5e",
+  "manifest": "https://github.com/AngryBeaver/bsa-a5e/releases/latest/download/module.json",
+  "download": "https://github.com/AngryBeaver/bsa-a5e/releases/latest/download/bsa-a5e.zip",
+  "relationships": {
+    "systems": [
+      {
+        "id": "a5e",
+        "type": "system",
+        "compatibility": {
+          "verified": "1.5.3"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "11",
+    "verified": "14"
   }
+}

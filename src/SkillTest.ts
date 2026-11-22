@@ -50,6 +50,10 @@ class SkillTestCustomized implements Test<"skill"|"dc"> {
     public action = async (initiatorData: InitiatorData):Promise<TestResult> => {
         const actor = beaversSystemInterface.initiator(initiatorData).actor;
         const roll = await beaversSystemInterface.actorRollSkill(actor,this.data.skill);
+        if (!roll) {
+            // roll dialog closed without rolling: nothing happens, the check can be rolled again
+            return {success: 0, fail: 0};
+        }
         return {
             success:roll.total>=this.data.dc?1:0,
             fail: roll.total<this.data.dc?1:0

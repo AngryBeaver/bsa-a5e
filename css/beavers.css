@@ -42,3 +42,14 @@ body {
     --beavers-actor-background-color: var(--beavers-background-color);
     --beavers-actor-background-color-highlight: var(--beavers-background-color-highlight);
 }
+/* crafting tab in the svelte nav: while it is active, the item svelte thinks is active looks inactive */
+.a5e-nav-item.a5e-nav-item--active.bsa-a5e-inactive {
+    background-color: var(--a5e-primary-nav-item-background, #3e4240);
+    transform: none;
+}
+.a5e-nav-item.bsa-a5e-inactive:hover {
+    transform: scale(1.2);
+}
+.a5e-nav__current-tab-label--active.bsa-a5e-inactive {
+    opacity: 0;
+}
