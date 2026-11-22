@@ -1,7 +1,7 @@
 {
   "name": "bsa-a5e",
   "title": "Beaver's System Adaption A5E",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A5E implementation for Beaver's System Interface",
   "#devDir": "c:\\vtts\\v12.331\\Data\\modules",
   "devDir": "c:\\vtts\\v14.368\\Data\\modules",
